@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F54B9188-A3D3-4048-A880-6466812155D8}" SchemaVersion="139">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{F54B9188-A3D3-4048-A880-6466812155D8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F54B9188-A3D3-4048-A880-6466812155D8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_TestSound" ID="{7DBCB15F-28E0-4899-86BB-A501361F7D8E}">
+					<ChildrenList>
+						<Action Name="" ID="{5FD929E1-368B-4418-9DA6-C365CAA16CE6}" ShortID="868648893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{6A1B00E0-BDD3-4D9E-969C-8897B887CC2D}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
