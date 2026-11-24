@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "176",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{45267A05-4468-4CBE-A57F-50830DE7D709}",
+    "Language": "SFX",
+    "Hash": "{D828150A-7585-1C39-3481-B312E1C2132D}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk"
+   }
+  ],
+  "FileHash": "{808BDD28-51D3-08F4-87EB-37D6D5CF8EE8}"
+ }
+}
