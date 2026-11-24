@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb28b447c7c71d4fb67630c60d7dd41, type: 3}
   m_Name: ObligationConfig
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.ObligationConfig
-  _oneTimePenalty: 10
-  _damagePerSecond: 5
+  _oneTimePenalty: 3
+  _damagePerSecond: 0.25
   _useDamageGrowthCurve: 0
   _damageGrowthCurve:
     serializedVersion: 2

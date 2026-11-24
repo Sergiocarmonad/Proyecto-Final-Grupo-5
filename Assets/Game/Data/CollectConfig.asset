@@ -18,7 +18,7 @@ MonoBehaviour:
   _cooldownDuration: 0.3
   _continuousUse: 0
   _range: 50
-  _aimRadius: 0.2
+  _aimRadius: 0.5
   _hitMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 128

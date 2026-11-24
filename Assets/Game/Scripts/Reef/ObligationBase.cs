@@ -60,12 +60,7 @@ namespace Game.Reef
         /// </summary>
         public void Initialize(ReefHealth reefHealth, ObligationConfig config = null)
         {
-            _reefHealth = reefHealth;
-            if (config != null)
-            {
-                _config = config;
-            }
-
+            SetDependencies(reefHealth, config);
             BeginPending();
         }
 
@@ -95,9 +90,7 @@ namespace Game.Reef
                 return;
             }
 
-            CurrentDamagePerSecond = 0f;
-            TransitionTo(ObligationState.Resolved);
-            OnResolved();
+            MarkResolved();
         }
 
         /// <summary>
@@ -112,15 +105,49 @@ namespace Game.Reef
 
             CurrentDamagePerSecond = 0f;
             TransitionTo(ObligationState.Failed);
+            ApplyOneTimePenalty();
+            OnFailed();
+        }
 
+        protected void SetDependencies(ReefHealth reefHealth, ObligationConfig config = null)
+        {
+            _reefHealth = reefHealth;
+            if (config != null)
+            {
+                _config = config;
+            }
+        }
+
+        protected float ApplyOneTimePenalty()
+        {
             float penalty = _config != null ? _config.OneTimePenalty : 0f;
             if (penalty > 0f && _reefHealth != null && !_reefHealth.IsDepleted)
             {
                 _reefHealth.ApplyDamage(penalty);
                 OneTimePenaltyApplied?.Invoke(this, penalty);
+                return penalty;
             }
 
-            OnFailed();
+            return 0f;
+        }
+
+        protected void MarkResolved()
+        {
+            if (State == ObligationState.Resolved || State == ObligationState.Failed)
+            {
+                return;
+            }
+
+            CurrentDamagePerSecond = 0f;
+            TransitionTo(ObligationState.Resolved);
+            OnResolved();
+        }
+
+        protected void ResetObligationState()
+        {
+            PendingElapsedTime = 0f;
+            CurrentDamagePerSecond = 0f;
+            State = ObligationState.Inactive;
         }
 
         protected virtual void OnBecamePending() { }

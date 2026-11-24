@@ -1,7 +1,20 @@
+using System;
+using System.Collections.Generic;
+using Game.Reef;
 using UnityEngine;
 
 namespace Game.Flow
 {
+    [Serializable]
+    public sealed class TrashSpawnEntry
+    {
+        [SerializeField] private TrashTypeConfig _trashType;
+        [SerializeField] private float _weight = 1f;
+
+        public TrashTypeConfig TrashType => _trashType;
+        public float Weight => Mathf.Max(0f, _weight);
+    }
+
     /// <summary>
     /// Declarative level settings defining survival duration, maximum health, and active obligations.
     /// </summary>
@@ -19,6 +32,13 @@ namespace Game.Flow
         [SerializeField] private bool _fishEnabled;
         [SerializeField] private bool _octopusEnabled;
 
+        [Header("Trash Settings")]
+        [SerializeField] private TrashSpawnEntry[] _trashTypes;
+        [SerializeField] private float _initialTrashDelay = 1.5f;
+        [SerializeField] private float _trashSpawnIntervalStart = 4f;
+        [SerializeField] private float _trashSpawnIntervalEnd = 2f;
+        [SerializeField] private int _maxActiveTrash;
+
         public float DurationSeconds => Mathf.Max(0f, _durationSeconds);
         public float MaxHealth => _maxHealth;
         public bool TrashEnabled => _trashEnabled;
@@ -26,5 +46,10 @@ namespace Game.Flow
         public bool OilSpillsEnabled => _oilSpillsEnabled;
         public bool FishEnabled => _fishEnabled;
         public bool OctopusEnabled => _octopusEnabled;
+        public IReadOnlyList<TrashSpawnEntry> TrashTypes => _trashTypes;
+        public float InitialTrashDelay => Mathf.Max(0f, _initialTrashDelay);
+        public float TrashSpawnIntervalStart => Mathf.Max(0.1f, _trashSpawnIntervalStart);
+        public float TrashSpawnIntervalEnd => Mathf.Max(0.1f, _trashSpawnIntervalEnd);
+        public int MaxActiveTrash => Mathf.Max(0, _maxActiveTrash);
     }
 }
