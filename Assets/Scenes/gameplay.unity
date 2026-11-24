@@ -510,6 +510,52 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &803668386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803668388}
+  - component: {fileID: 803668387}
+  m_Layer: 0
+  m_Name: DebugTools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &803668387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803668386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a017e4881a2c4442b10f1d1f646f459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.LevelFlowDebugLogger
+  _levelFlowController: {fileID: 845420221}
+  _reefHealth: {fileID: 845420222}
+--- !u!4 &803668388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803668386}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.54794, y: -0, z: 35.05766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +616,6 @@ GameObject:
   - component: {fileID: 845420223}
   - component: {fileID: 845420222}
   - component: {fileID: 845420221}
-  - component: {fileID: 845420224}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -621,20 +666,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &845420224
+--- !u!1 &1678865618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678865620}
+  - component: {fileID: 1678865621}
+  m_Layer: 0
+  m_Name: TestObligation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678865620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678865618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.54794, y: -0, z: 35.05766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678865621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845420220}
+  m_GameObject: {fileID: 1678865618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a017e4881a2c4442b10f1d1f646f459, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce4f3f28f241344f9954f1d4e5f13bf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.LevelFlowDebugLogger
-  _levelFlowController: {fileID: 845420221}
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.TestObligation
+  _config: {fileID: 11400000, guid: a091b21cfc4849642aef45ea9b1cd695, type: 2}
   _reefHealth: {fileID: 845420222}
+  _logEvents: 1
 --- !u!1 &1750143807
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,3 +890,5 @@ SceneRoots:
   - {fileID: 44276761}
   - {fileID: 1750143813}
   - {fileID: 845420223}
+  - {fileID: 1678865620}
+  - {fileID: 803668388}
