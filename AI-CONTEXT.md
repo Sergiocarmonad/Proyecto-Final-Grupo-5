@@ -4,19 +4,14 @@ Juego de game jam en Unity 6.3 LTS (6000.3.24f1), primera persona, low poly, amb
 
 ## Mapa
 
-Estructura propuesta; ajústala a la real y borra lo que no exista.
-
-- `Assets/Game/Scripts/Core/`: eventos, interfaces y tipos compartidos.
-- `Assets/Game/Scripts/Player/`: cámara estática con rotación de 360° y apuntado con el cursor.
-- `Assets/Game/Scripts/Weapons/`: rueda de armas y las tres armas (recolectar, limpiar, cazar).
-- `Assets/Game/Scripts/Reef/`: salud del arrecife y obligaciones del jugador (basura, suciedad, peces).
-- `Assets/Game/Scripts/Enemies/`: pulpo, puntos débiles y mancha de tinta.
-- `Assets/Game/Scripts/Radar/`: registro de entidades rastreables y datos del radar.
-- `Assets/Game/Scripts/Flow/`: niveles, temporizador de supervivencia, victoria y derrota.
-- `Assets/Game/Scripts/UI/`: HUD (solo presentación; se suscribe a eventos).
-- `Assets/Game/Data/`: instancias de ScriptableObject (armas, tipos de basura, peces, pulpo, niveles). Las crea el usuario.
-- `Assets/Game/VFX/` y `Assets/Game/Art/`: shaders, partículas, materiales y arte. Son del usuario; el agente no los lee ni los edita.
-- `Assets/Scenes/`: escenas de Unity; el agente no las edita. Cualquier creación o configuración en ellas corresponde al usuario en el Editor.
+- `Assets/Game/Scripts/Player/`: cámara estática con rotación en bordes de 360° y rayo de apuntado con el cursor.
+- `Assets/Game/Scripts/Weapons/`: rueda de armas con cámara lenta, controlador activo y las tres armas (recolectar, limpiar, cazar).
+- `Assets/Game/Scripts/Reef/`: salud del arrecife, obligaciones (basura, zonas de coral con suciedad/vertidos y peces dañinos), spawners y alertas.
+- `Assets/Game/Scripts/Radar/`: registro de entidades rastreables y cálculo de blips del radar.
+- `Assets/Game/Scripts/Flow/`: configuración de niveles (`LevelConfig`), temporizador de supervivencia, victoria/derrota y drivers de aparición.
+- `Assets/Game/Scripts/UI/`: vistas del HUD (salud, temporizador, arma activa, rueda de armas, contador de basura, alertas y radar; solo presentación).
+- `Assets/Game/Data/`: instancias de ScriptableObject (armas, obligaciones, basura, peces, niveles). Las crea el usuario.
+- `Assets/Art/` y `Assets/Scenes/`: arte y escenas de Unity; el agente no los lee ni los edita.
 
 ## Orientación de arquitectura
 

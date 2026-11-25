@@ -15,6 +15,16 @@ namespace Game.Flow
         public float Weight => Mathf.Max(0f, _weight);
     }
 
+    [Serializable]
+    public sealed class FishSpawnEntry
+    {
+        [SerializeField] private FishConfig _fishConfig;
+        [SerializeField] private float _weight = 1f;
+
+        public FishConfig FishConfig => _fishConfig;
+        public float Weight => Mathf.Max(0f, _weight);
+    }
+
     /// <summary>
     /// Declarative level settings defining survival duration, maximum health, and active obligations.
     /// </summary>
@@ -45,6 +55,13 @@ namespace Game.Flow
         [SerializeField] private float _oilSpillIntervalEnd = 6f;
         [SerializeField] private float _oilSpillIntensity = 0.25f;
 
+        [Header("Fish Settings")]
+        [SerializeField] private FishSpawnEntry[] _fishTypes;
+        [SerializeField] private float _initialFishDelay = 4f;
+        [SerializeField] private float _fishSpawnIntervalStart = 10f;
+        [SerializeField] private float _fishSpawnIntervalEnd = 5f;
+        [SerializeField] private int _maxActiveFish = 3;
+
         public float DurationSeconds => Mathf.Max(0f, _durationSeconds);
         public float MaxHealth => _maxHealth;
         public bool TrashEnabled => _trashEnabled;
@@ -61,5 +78,10 @@ namespace Game.Flow
         public float OilSpillIntervalStart => Mathf.Max(0.1f, _oilSpillIntervalStart);
         public float OilSpillIntervalEnd => Mathf.Max(0.1f, _oilSpillIntervalEnd);
         public float OilSpillIntensity => Mathf.Max(0.01f, _oilSpillIntensity);
+        public IReadOnlyList<FishSpawnEntry> FishTypes => _fishTypes;
+        public float InitialFishDelay => Mathf.Max(0f, _initialFishDelay);
+        public float FishSpawnIntervalStart => Mathf.Max(0.1f, _fishSpawnIntervalStart);
+        public float FishSpawnIntervalEnd => Mathf.Max(0.1f, _fishSpawnIntervalEnd);
+        public int MaxActiveFish => Mathf.Max(0, _maxActiveFish);
     }
 }
