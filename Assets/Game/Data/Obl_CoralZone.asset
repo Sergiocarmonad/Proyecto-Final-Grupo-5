@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Obl_CoralZone
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.ObligationConfig
   _oneTimePenalty: 0
-  _damagePerSecond: 0.5
+  _damagePerSecond: 0.2
   _useDamageGrowthCurve: 0
   _damageGrowthCurve:
     serializedVersion: 2

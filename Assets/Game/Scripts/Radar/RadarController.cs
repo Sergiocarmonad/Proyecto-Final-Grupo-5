@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Game.Flow;
 using UnityEngine;
 
 namespace Game.Radar
@@ -12,6 +13,7 @@ namespace Game.Radar
         private const float MinVectorSqrMagnitude = 0.0001f;
 
         [SerializeField] private TrackableRegistry _registry;
+        [SerializeField] private LevelFlowController _levelFlowController;
         [SerializeField] private Transform _radarOrigin;
         [SerializeField, Min(0.1f)] private float _radarRange = 50f;
         [SerializeField, Min(0.05f)] private float _refreshInterval = 0.2f;
@@ -19,6 +21,7 @@ namespace Game.Radar
 
         private readonly List<RadarBlipData> _blips = new List<RadarBlipData>();
         private float _refreshTimer;
+        private bool _isRefreshEnabled = true;
 
         public event Action<IReadOnlyList<RadarBlipData>> RadarUpdated;
         public event Action<RadarBlipData> BlipChanged;
@@ -29,6 +32,13 @@ namespace Game.Radar
 
         private void OnEnable()
         {
+            if (_levelFlowController != null)
+            {
+                _levelFlowController.LevelStarted += HandleLevelStarted;
+                _levelFlowController.LevelWon += HandleLevelEnded;
+                _levelFlowController.LevelLost += HandleLevelEnded;
+            }
+
             if (_registry == null)
             {
                 return;
@@ -37,12 +47,16 @@ namespace Game.Radar
             _registry.EntityRegistered += HandleRegistryMembershipChanged;
             _registry.EntityUnregistered += HandleRegistryMembershipChanged;
             _registry.EntityStateChanged += HandleEntityStateChanged;
-            RefreshRadar();
+
+            if (_isRefreshEnabled)
+            {
+                RefreshRadar();
+            }
         }
 
         private void Update()
         {
-            if (_registry == null)
+            if (!_isRefreshEnabled || _registry == null)
             {
                 return;
             }
@@ -58,6 +72,13 @@ namespace Game.Radar
 
         private void OnDisable()
         {
+            if (_levelFlowController != null)
+            {
+                _levelFlowController.LevelStarted -= HandleLevelStarted;
+                _levelFlowController.LevelWon -= HandleLevelEnded;
+                _levelFlowController.LevelLost -= HandleLevelEnded;
+            }
+
             if (_registry == null)
             {
                 return;
@@ -78,14 +99,33 @@ namespace Game.Radar
             RadarUpdated?.Invoke(_blips);
         }
 
+        private void HandleLevelStarted(LevelConfig _)
+        {
+            _isRefreshEnabled = true;
+            if (_registry != null)
+            {
+                RefreshRadar();
+            }
+        }
+
+        private void HandleLevelEnded(LevelConfig _)
+        {
+            _isRefreshEnabled = false;
+        }
+
         private void HandleRegistryMembershipChanged(int _, IRadarTrackable __)
         {
+            if (!_isRefreshEnabled)
+            {
+                return;
+            }
+
             RefreshRadar();
         }
 
         private void HandleEntityStateChanged(int trackableId, IRadarTrackable trackable)
         {
-            if (trackable == null)
+            if (!_isRefreshEnabled || trackable == null)
             {
                 return;
             }

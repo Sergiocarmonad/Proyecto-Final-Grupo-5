@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b657358aaceebcc43b1840a508c263db, type: 3}
   m_Name: Weapon_Collect
   m_EditorClassIdentifier: Assembly-CSharp::Game.Weapons.WeaponConfig
+  _displayName: Collect
+  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _usesAmmo: 0
   _maxAmmo: 10
   _reloadDuration: 1.5

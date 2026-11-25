@@ -35,12 +35,19 @@ namespace Game.Flow
         /// </summary>
         public event Action<LevelConfig> LevelLost;
 
+        /// <summary>
+        /// Raised when the remaining survival time initializes, crosses a whole second, or finishes, passing (remainingSeconds, durationSeconds).
+        /// </summary>
+        public event Action<float, float> TimeRemainingChanged;
+
         public LevelConfig CurrentLevel { get; private set; }
         public float Duration { get; private set; }
         public float RemainingTime { get; private set; }
         public float NormalizedTimeRemaining => Duration > 0f ? RemainingTime / Duration : 0f;
         public bool IsRunning { get; private set; }
         public LevelOutcome Outcome { get; private set; }
+
+        private int _lastAnnouncedWholeSecond = -1;
 
         private void Start()
         {
@@ -62,6 +69,14 @@ namespace Game.Flow
             if (RemainingTime <= 0f && !_reefHealth.IsDepleted)
             {
                 CompleteLevel(LevelOutcome.Won);
+                return;
+            }
+
+            int currentWholeSecond = Mathf.CeilToInt(RemainingTime);
+            if (currentWholeSecond != _lastAnnouncedWholeSecond)
+            {
+                _lastAnnouncedWholeSecond = currentWholeSecond;
+                TimeRemainingChanged?.Invoke(RemainingTime, Duration);
             }
         }
 
@@ -92,11 +107,13 @@ namespace Game.Flow
             RemainingTime = Duration;
             Outcome = LevelOutcome.None;
             IsRunning = true;
+            _lastAnnouncedWholeSecond = Mathf.CeilToInt(RemainingTime);
 
             _reefHealth.ResetHealth(targetConfig.MaxHealth);
             _reefHealth.Depleted += HandleReefDepleted;
 
             LevelStarted?.Invoke(CurrentLevel);
+            TimeRemainingChanged?.Invoke(RemainingTime, Duration);
         }
 
         private void HandleReefDepleted()
@@ -113,6 +130,8 @@ namespace Game.Flow
         {
             IsRunning = false;
             Outcome = outcome;
+            _lastAnnouncedWholeSecond = Mathf.CeilToInt(RemainingTime);
+            TimeRemainingChanged?.Invoke(RemainingTime, Duration);
 
             if (_reefHealth != null)
             {
