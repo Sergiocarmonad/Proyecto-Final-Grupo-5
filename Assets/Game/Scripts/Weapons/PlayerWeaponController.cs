@@ -1,3 +1,4 @@
+using System;
 using Game.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,12 @@ namespace Game.Weapons
         [SerializeField] private WeaponBase _initialWeapon;
 
         private IWeapon _activeWeapon;
+        private bool _isInputBlocked;
+
+        /// <summary>
+        /// Raised when the active equipped weapon changes.
+        /// </summary>
+        public event Action<IWeapon> WeaponChanged;
 
         public IWeapon ActiveWeapon => _activeWeapon;
 
@@ -26,7 +33,7 @@ namespace Game.Weapons
 
         private void Update()
         {
-            if (Time.timeScale <= 0f || !Application.isFocused || _activeWeapon == null)
+            if (_isInputBlocked || Time.timeScale <= 0f || !Application.isFocused || _activeWeapon == null)
             {
                 return;
             }
@@ -60,6 +67,14 @@ namespace Game.Weapons
         }
 
         /// <summary>
+        /// Blocks or unblocks player fire and reload input (e.g. while the weapon wheel is open).
+        /// </summary>
+        public void SetInputBlocked(bool blocked)
+        {
+            _isInputBlocked = blocked;
+        }
+
+        /// <summary>
         /// Switches the active weapon controlled by player input.
         /// </summary>
         public void EquipWeapon(IWeapon weapon)
@@ -72,6 +87,7 @@ namespace Game.Weapons
             _activeWeapon?.SetActive(false);
             _activeWeapon = weapon;
             _activeWeapon?.SetActive(true);
+            WeaponChanged?.Invoke(_activeWeapon);
         }
     }
 }

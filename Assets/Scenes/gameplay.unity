@@ -1371,6 +1371,7 @@ GameObject:
   - component: {fileID: 1780020312}
   - component: {fileID: 1780020311}
   - component: {fileID: 1780020313}
+  - component: {fileID: 1780020314}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1406,7 +1407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Weapons.PlayerWeaponController
   _aimRayProvider: {fileID: 330585551}
-  _initialWeapon: {fileID: 1780020313}
+  _initialWeapon: {fileID: 1780020312}
 --- !u!114 &1780020312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,6 +1437,29 @@ MonoBehaviour:
   _config: {fileID: 11400000, guid: de811dddf52e0c0409efdda765c31310, type: 2}
   _startActive: 1
   _cleanAmountPerUse: 0.05
+--- !u!114 &1780020314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780020309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eceb8d35fb79c4090284ab6354af1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Weapons.WeaponWheelController
+  _weaponController: {fileID: 1780020311}
+  _edgeLookCamera: {fileID: 330585550}
+  _levelFlowController: {fileID: 845420221}
+  _weapons:
+  - {fileID: 1780020312}
+  - {fileID: 1780020313}
+  _wheelKey: 3
+  _slowMotionTimeScale: 0.2
+  _deadzoneRadiusFraction: 0.15
+  _startAngleDegrees: 90
+  _clockwise: 1
 --- !u!1 &2123226581
 GameObject:
   m_ObjectHideFlags: 0

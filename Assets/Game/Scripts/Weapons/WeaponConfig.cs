@@ -8,6 +8,10 @@ namespace Game.Weapons
     [CreateAssetMenu(menuName = "Coral Rescue/Weapon Config", fileName = "WeaponConfig")]
     public class WeaponConfig : ScriptableObject
     {
+        [Header("Wheel Metadata")]
+        [SerializeField] private string _displayName;
+        [SerializeField] private Sprite _icon;
+
         [Header("Ammo & Reload")]
         [SerializeField] private bool _usesAmmo = true;
         [SerializeField, Min(0)] private int _maxAmmo = 10;
@@ -20,6 +24,8 @@ namespace Game.Weapons
         [SerializeField, Min(0f)] private float _aimRadius = 0.2f;
         [SerializeField] private LayerMask _hitMask = ~0;
 
+        public string DisplayName => string.IsNullOrWhiteSpace(_displayName) ? name : _displayName;
+        public Sprite Icon => _icon;
         public bool UsesAmmo => _usesAmmo;
         public int MaxAmmo => _usesAmmo ? Mathf.Max(0, _maxAmmo) : 0;
         public float ReloadDuration => Mathf.Max(0f, _reloadDuration);
