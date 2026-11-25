@@ -324,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.CoralZone
   _config: {fileID: 11400000, guid: b70da7949330afe4eba85bf32d0a8368, type: 2}
   _reefHealth: {fileID: 845420222}
+  _trackableRegistry: {fileID: 444720657}
   _zoneId: 
   _dirtyThreshold: 0.75
   _passiveDirtyRate: 0.05
@@ -771,6 +772,82 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &444720654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444720658}
+  - component: {fileID: 444720657}
+  - component: {fileID: 444720656}
+  - component: {fileID: 444720655}
+  m_Layer: 0
+  m_Name: Radar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &444720655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81330eda3cbcc4409d1158f3457cd6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.CoralAlertNotifier
+  _trackableRegistry: {fileID: 444720657}
+--- !u!114 &444720656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796a221211fbe9a44aecd02f144083c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Radar.RadarController
+  _registry: {fileID: 444720657}
+  _radarOrigin: {fileID: 330585546}
+  _radarRange: 30
+  _refreshInterval: 0.2
+  _includeInactiveEntities: 0
+--- !u!114 &444720657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c08eee73eafa441b97d99c8fbef78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Radar.TrackableRegistry
+--- !u!4 &444720658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.13095, y: 0, z: 7.80979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &803668386
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +859,7 @@ GameObject:
   - component: {fileID: 803668388}
   - component: {fileID: 803668387}
   - component: {fileID: 803668389}
+  - component: {fileID: 803668390}
   m_Layer: 0
   m_Name: DebugTools
   m_TagString: Untagged
@@ -832,6 +910,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Weapons.WeaponDebugLogger
   _weapon: {fileID: 1780020312}
   _collectWeapon: {fileID: 1780020312}
+--- !u!114 &803668390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803668386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d819b3ce788b2024d967ed28af19543c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Radar.RadarDebugLogger
+  _radarController: {fileID: 444720656}
+  _coralAlertNotifier: {fileID: 444720655}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.CoralZone
   _config: {fileID: 11400000, guid: b70da7949330afe4eba85bf32d0a8368, type: 2}
   _reefHealth: {fileID: 845420222}
+  _trackableRegistry: {fileID: 444720657}
   _zoneId: 
   _dirtyThreshold: 0.75
   _passiveDirtyRate: 0.05
@@ -1495,6 +1588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.CoralZone
   _config: {fileID: 11400000, guid: b70da7949330afe4eba85bf32d0a8368, type: 2}
   _reefHealth: {fileID: 845420222}
+  _trackableRegistry: {fileID: 444720657}
   _zoneId: 
   _dirtyThreshold: 0.75
   _passiveDirtyRate: 0.05
@@ -1625,3 +1719,4 @@ SceneRoots:
   - {fileID: 2123226586}
   - {fileID: 1007400974}
   - {fileID: 112171558}
+  - {fileID: 444720658}

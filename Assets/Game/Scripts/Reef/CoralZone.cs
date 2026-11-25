@@ -1,4 +1,5 @@
 using System;
+using Game.Radar;
 using UnityEngine;
 
 namespace Game.Reef
@@ -13,8 +14,9 @@ namespace Game.Reef
     /// <summary>
     /// Reef coral zone modeled as an obligation that drains reef health while dirtying or dirty.
     /// </summary>
-    public sealed class CoralZone : ObligationBase
+    public sealed class CoralZone : ObligationBase, IRadarTrackable
     {
+        [SerializeField] private TrackableRegistry _trackableRegistry;
         [SerializeField] private string _zoneId;
         [SerializeField, Range(0.01f, 1f)] private float _dirtyThreshold = 0.75f;
         [SerializeField, Min(0f)] private float _passiveDirtyRate = 0.05f;
@@ -42,9 +44,18 @@ namespace Game.Reef
         /// </summary>
         public event Action<CoralZone> Cleaned;
 
+        /// <inheritdoc />
+        public event Action<IRadarTrackable> TrackableStateChanged;
+
         public string ZoneId => _zoneId;
         public float Dirtiness => _dirtiness;
         public bool IsClean => State != ObligationState.Pending;
+
+        public RadarEntityType EntityType => RadarEntityType.CoralZone;
+        public RadarSignalColor RadarColor => IsClean ? RadarSignalColor.Green : RadarSignalColor.Orange;
+        public float RadarSeverity => _dirtiness;
+        public Vector3 WorldPosition => transform.position;
+        public bool IsTrackableActive => isActiveAndEnabled;
 
         public CoralZoneState ZoneState
         {
@@ -56,6 +67,22 @@ namespace Game.Reef
                 }
 
                 return _dirtiness >= _dirtyThreshold ? CoralZoneState.Dirty : CoralZoneState.Dirtying;
+            }
+        }
+
+        private void OnEnable()
+        {
+            if (_trackableRegistry != null)
+            {
+                _trackableRegistry.Register(this);
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (_trackableRegistry != null)
+            {
+                _trackableRegistry.Unregister(this);
             }
         }
 
@@ -83,12 +110,18 @@ namespace Game.Reef
             }
 
             bool wasClean = State == ObligationState.Inactive;
+            float previousDirtiness = _dirtiness;
             _dirtiness = Mathf.Clamp01(_dirtiness + clampedIntensity);
 
             if (wasClean)
             {
                 BeginPending();
                 CoralDirtyingStarted?.Invoke(this);
+                TrackableStateChanged?.Invoke(this);
+            }
+            else if (!Mathf.Approximately(_dirtiness, previousDirtiness))
+            {
+                TrackableStateChanged?.Invoke(this);
             }
         }
 
@@ -118,6 +151,7 @@ namespace Game.Reef
                 Resolve();
                 Cleaned?.Invoke(this);
                 ResetObligationState();
+                TrackableStateChanged?.Invoke(this);
             }
 
             return true;
@@ -128,9 +162,15 @@ namespace Game.Reef
         /// </summary>
         public void ResetZone()
         {
+            bool hadDirtiness = !IsClean || _dirtiness > 0f;
             _dirtiness = 0f;
             _hasCleaningStarted = false;
             ResetObligationState();
+
+            if (hadDirtiness)
+            {
+                TrackableStateChanged?.Invoke(this);
+            }
         }
 
         protected override void OnBecamePending()
