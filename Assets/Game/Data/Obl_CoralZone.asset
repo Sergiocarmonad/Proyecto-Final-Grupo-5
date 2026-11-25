@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cb28b447c7c71d4fb67630c60d7dd41, type: 3}
-  m_Name: ObligationConfig
+  m_Name: Obl_CoralZone
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.ObligationConfig
-  _oneTimePenalty: 3
-  _damagePerSecond: 0.25
+  _oneTimePenalty: 0
+  _damagePerSecond: 0.5
   _useDamageGrowthCurve: 0
   _damageGrowthCurve:
     serializedVersion: 2

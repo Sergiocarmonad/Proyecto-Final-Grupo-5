@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4671baacf3e951542bf338fe64421f60, type: 3}
-  m_Name: TrashTypeConfig
+  m_Name: TrashType_Bottle
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.TrashTypeConfig
   _prefab: {fileID: 8591979428256548481, guid: ec831827adb539c48a27b18c7448516f, type: 3}
   _obligationConfig: {fileID: 11400000, guid: a091b21cfc4849642aef45ea9b1cd695, type: 2}

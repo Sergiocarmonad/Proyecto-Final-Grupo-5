@@ -97,7 +97,7 @@ namespace Game.Weapons
             ExecuteUse(aimRay);
             UseExecuted?.Invoke(aimRay);
 
-            if (UsesAmmo)
+            if (UsesAmmo && ShouldConsumeAmmoAfterUse)
             {
                 _currentAmmo = Mathf.Max(0, _currentAmmo - 1);
                 AmmoChanged?.Invoke(_currentAmmo, MaxAmmo);
@@ -130,6 +130,11 @@ namespace Game.Weapons
             _reloadTimer = reloadDuration;
             return true;
         }
+
+        /// <summary>
+        /// Returns whether the last executed use should consume one unit of ammo.
+        /// </summary>
+        protected virtual bool ShouldConsumeAmmoAfterUse => true;
 
         /// <summary>
         /// Performs weapon-specific targeting or simulation when TryUse succeeds.

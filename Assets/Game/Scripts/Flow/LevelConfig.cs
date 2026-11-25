@@ -39,6 +39,12 @@ namespace Game.Flow
         [SerializeField] private float _trashSpawnIntervalEnd = 2f;
         [SerializeField] private int _maxActiveTrash;
 
+        [Header("Oil Spill Settings")]
+        [SerializeField] private float _initialOilSpillDelay = 3f;
+        [SerializeField] private float _oilSpillIntervalStart = 12f;
+        [SerializeField] private float _oilSpillIntervalEnd = 6f;
+        [SerializeField] private float _oilSpillIntensity = 0.25f;
+
         public float DurationSeconds => Mathf.Max(0f, _durationSeconds);
         public float MaxHealth => _maxHealth;
         public bool TrashEnabled => _trashEnabled;
@@ -51,5 +57,9 @@ namespace Game.Flow
         public float TrashSpawnIntervalStart => Mathf.Max(0.1f, _trashSpawnIntervalStart);
         public float TrashSpawnIntervalEnd => Mathf.Max(0.1f, _trashSpawnIntervalEnd);
         public int MaxActiveTrash => Mathf.Max(0, _maxActiveTrash);
+        public float InitialOilSpillDelay => Mathf.Max(0f, _initialOilSpillDelay);
+        public float OilSpillIntervalStart => Mathf.Max(0.1f, _oilSpillIntervalStart);
+        public float OilSpillIntervalEnd => Mathf.Max(0.1f, _oilSpillIntervalEnd);
+        public float OilSpillIntensity => Mathf.Max(0.01f, _oilSpillIntensity);
     }
 }

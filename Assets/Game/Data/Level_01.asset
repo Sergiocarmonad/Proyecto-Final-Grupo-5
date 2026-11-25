@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 662c48ea2c5f89840aa54fc97bfb1a8e, type: 3}
-  m_Name: LevelConfig
+  m_Name: Level_01
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.LevelConfig
   _durationSeconds: 60
   _maxHealth: 100
