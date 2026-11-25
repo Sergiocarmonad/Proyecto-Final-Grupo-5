@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f58cd2f3d9a8643a8ab203c5a4c513, type: 3}
+  m_Name: FishConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.FishConfig
+  _obligation: {fileID: 11400000, guid: a9d6f320cc88b6640a7d220cf75c1dc0, type: 2}
+  _swimSpeed: 1.5
+  _turnSpeed: 4
+  _patrolRadius: 6
+  _minHeightOffset: -1.5
+  _maxHeightOffset: 1.5
+  _waypointReachDistance: 0.5

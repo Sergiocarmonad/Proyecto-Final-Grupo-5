@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}" SchemaVersion="139">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{6A1B00E0-BDD3-4D9E-969C-8897B887CC2D}" ShortID="914145347">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{19F0208C-51E6-46D5-A201-74289167AAAD}">
+							<Language>SFX</Language>
+							<AudioFile>WAT_ICE_BOTTLE_TEXTURAL_POPS 00.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="270123054"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{19F0208C-51E6-46D5-A201-74289167AAAD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

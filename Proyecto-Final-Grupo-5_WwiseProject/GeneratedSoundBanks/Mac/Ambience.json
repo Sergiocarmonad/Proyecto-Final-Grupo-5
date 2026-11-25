@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "176",
+  "SoundBanks": [
+   {
+    "Id": "85412153",
+    "Type": "User",
+    "GUID": "{E8C89E5C-72E2-4886-95F7-2A556CB71ED3}",
+    "Language": "SFX",
+    "Hash": "{516EFC7B-F257-6D1A-EE65-1834A6A58EAE}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Ambience",
+    "ShortName": "Ambience",
+    "Path": "Ambience.bnk"
+   }
+  ],
+  "FileHash": "{5C0CC97B-4D3C-10CE-6F3F-B435AA2AD289}"
+ }
+}
