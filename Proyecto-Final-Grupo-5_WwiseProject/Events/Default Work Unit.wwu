@@ -36,6 +36,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Empty_Ammo" ID="{79509D2A-E6C0-4719-A76C-6DF5035B15E5}">
+					<ChildrenList>
+						<Action Name="" ID="{99CD48F1-219B-4790-9F03-E21C6E5F8FC0}" ShortID="188960585">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="No Ammo" ID="{33978D5F-08C7-471E-97EC-C4A78DC0DE07}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bubble_Generator" ID="{C523B811-6ADE-4BE9-A1A0-9DCBEEEEE213}">
+					<ChildrenList>
+						<Action Name="" ID="{332226E5-74C4-45C6-97B7-3E3ED01EF3A6}" ShortID="306380106">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bubbles ASMR loop" ID="{B9FAFA5B-7CED-48F8-A60B-CF7F1A380144}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
