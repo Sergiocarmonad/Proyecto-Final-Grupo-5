@@ -1111,15 +1111,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1383087386941810090, guid: 6bc145c34072f104bb7bf68e474805fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.79
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 1383087386941810090, guid: 6bc145c34072f104bb7bf68e474805fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.13
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 1383087386941810090, guid: 6bc145c34072f104bb7bf68e474805fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.52
+      value: 15.83
       objectReference: {fileID: 0}
     - target: {fileID: 1383087386941810090, guid: 6bc145c34072f104bb7bf68e474805fd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3987,8 +3987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0dea2d3e1bc541af4d158f623f222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Weapons.WeaponDebugLogger
-  _weapon: {fileID: 1780020312}
-  _collectWeapon: {fileID: 1780020312}
 --- !u!114 &803668390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4001,8 +3999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d819b3ce788b2024d967ed28af19543c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Radar.RadarDebugLogger
-  _radarController: {fileID: 444720656}
-  _coralAlertNotifier: {fileID: 444720655}
 --- !u!1001 &808509999
 PrefabInstance:
   m_ObjectHideFlags: 0
