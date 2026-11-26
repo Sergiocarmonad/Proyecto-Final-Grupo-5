@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28fc054270e326a49bfebe3173a55ae2
+guid: 3fb9162e73d0fa648a0e9788aa46c855
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Bottle/Bottle
-    2/c/Bottle 2_Body_C_Normal.png
-  uploadId: 752217

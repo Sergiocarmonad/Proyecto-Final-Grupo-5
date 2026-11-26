@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0917716b0f4e930429e1800228ea6ff6
+guid: e122d4ee18a1a4b45931549c5ba34ad8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Gallon/20L/Gallon
-    20L_D_Albedo.png
-  uploadId: 752217

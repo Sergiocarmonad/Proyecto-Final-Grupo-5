@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18c96fabcd82bc444a054a0ae1db832f
+guid: 2153e3e0a23e46c4e9595b970dac3057
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Color
-    spray/Pianted/Color spray_Black_Albedo.png
-  uploadId: 752217

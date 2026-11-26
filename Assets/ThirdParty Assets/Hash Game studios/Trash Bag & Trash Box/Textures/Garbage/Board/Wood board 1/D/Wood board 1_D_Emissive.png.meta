@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86d96dc972c5d284c9e1135073d79e09
+guid: 81e260ac1e3895c49a6afadbaacc97f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Board/Wood
-    board 1/D/Wood board 1_D_Emissive.png
-  uploadId: 752217

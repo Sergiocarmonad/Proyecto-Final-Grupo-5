@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b3e98301e98e6849b35cb4eb1a0fefb
+guid: d94bb542b5be60e40b9138b1cf38c703
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -107,11 +107,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Canned/Canned
-    food/Canned food 1.fbx
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 813e6e3e6bc0fdb48af4cea262d8d174
+guid: e49d6ecf9189fea48b8c1858dd80e981
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Pizza
-    box/02/Pizza box_Dirt_Height.png
-  uploadId: 752217

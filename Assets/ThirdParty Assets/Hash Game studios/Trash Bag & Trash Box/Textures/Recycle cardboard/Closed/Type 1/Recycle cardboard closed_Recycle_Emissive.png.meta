@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7eba73742953df64c8304c03f155cbd7
+guid: db44dcfe94ff06a4888955fb6ef8c2b9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Recycle cardboard/Closed/Type
-    1/Recycle cardboard closed_Recycle_Emissive.png
-  uploadId: 752217

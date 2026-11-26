@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e44258c9f3b6c144992661e530fff3e
+guid: 1ab9ebc4fbe222c4f8d464d7859b37ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Board/Wood
-    board 2/D/Wood board 2_D_Height.png
-  uploadId: 752217

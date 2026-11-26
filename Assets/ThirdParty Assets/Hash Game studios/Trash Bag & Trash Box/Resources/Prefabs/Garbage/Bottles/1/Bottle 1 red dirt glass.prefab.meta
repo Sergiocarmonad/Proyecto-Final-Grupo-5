@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: 64019453cf9a5304497e655e390ba941
+guid: 0da9880bedcb69545869351c1ada7821
 PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Resources/Prefabs/Garbage/Bottles/1/Bottle
-    1 red dirt glass.prefab
-  uploadId: 752217

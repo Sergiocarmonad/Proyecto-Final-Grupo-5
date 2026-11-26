@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fce35c58de0f1a4e92c373ddfbeb529
+guid: 6ca656d7a7639d241a6c3adf0c9be28f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Color
-    spray/Pianted/Color spray_Green_Albedo.png
-  uploadId: 752217

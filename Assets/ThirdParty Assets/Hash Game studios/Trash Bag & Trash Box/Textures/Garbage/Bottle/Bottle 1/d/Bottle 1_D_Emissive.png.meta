@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96cbcad53f7ad7b47b54635a1436acd9
+guid: 763cb37b7b370fd42b823b69549568a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Bottle/Bottle
-    1/d/Bottle 1_D_Emissive.png
-  uploadId: 752217

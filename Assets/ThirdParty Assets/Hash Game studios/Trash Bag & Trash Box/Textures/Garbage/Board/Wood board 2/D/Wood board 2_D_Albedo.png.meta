@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22172f4041ef1c347b45ff6572d5faf2
+guid: 92de173dfedd23449b3938ef0f686903
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Board/Wood
-    board 2/D/Wood board 2_D_Albedo.png
-  uploadId: 752217

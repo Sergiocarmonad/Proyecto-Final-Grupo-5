@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd4b213ebe7944c4cb58d1c49961755a
+guid: a7d42b8b8e49edf4cb1f203ecae9cd64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Paint
-    can/1/Paint can_D_Emissive.png
-  uploadId: 752217

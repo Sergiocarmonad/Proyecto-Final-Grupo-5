@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-guid: d7acea656214d0e47bff9c8879d3f8ba
+guid: c090c38740848c241b0c130e2cd3da46
 TextScriptImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Bottle/info.txt
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bcd6a9c151e94e348ab4adb7a1568ce7
+guid: 841d085a06be3d94fb5da46193df5327
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Color
-    spray/Pianted/Color spray_P_Metalic.png
-  uploadId: 752217

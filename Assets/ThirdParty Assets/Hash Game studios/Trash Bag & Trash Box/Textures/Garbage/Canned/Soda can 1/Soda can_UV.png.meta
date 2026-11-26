@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1454a3552045d2c458e192c7137378b2
+guid: 523167d18819be547846abe773612afe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Soda
-    can 1/Soda can_UV.png
-  uploadId: 752217

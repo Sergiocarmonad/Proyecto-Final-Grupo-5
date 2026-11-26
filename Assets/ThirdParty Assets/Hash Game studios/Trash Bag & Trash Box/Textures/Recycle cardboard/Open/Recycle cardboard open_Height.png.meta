@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b2454703e414e0e4093f3e4641be9041
+guid: 0b6d037744c634d44a6919a273f64f2a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Recycle cardboard/Open/Recycle
-    cardboard open_Height.png
-  uploadId: 752217

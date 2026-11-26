@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: 32ad073477ad6a0408307423b0b3136c
+guid: 3880644ce3f366f4da2e03fcb19e4dbe
 PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Resources/Prefabs/Garbage/Pizza
-    box/Pizza box crumple 2.prefab
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1d0764152363d441abe9d448bdf0b46
+guid: c17e79dd18b69124da2309f2ae606b0d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Bottle/Bottle
-    2/c/Bottle 2_Cap_C_AmbientOcclusion.png
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 831cc4a63dccc524e84b2111f4189828
+guid: cdbd856961172524299c894c2ff0e823
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Ground
-    mask/2/Ground mask_D2_Metalic.png
-  uploadId: 752217

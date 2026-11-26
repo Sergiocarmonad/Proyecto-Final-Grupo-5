@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dca95d2b0584135408765b1ac594f18d
+guid: c4a332e5769002943a7b287e784991ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Canned
-    food 1/2/Canned food_R_AmbientOcclusion.png
-  uploadId: 752217

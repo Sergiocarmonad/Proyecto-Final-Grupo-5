@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa40fdefe1cb2db4c92854661a3b7338
+guid: 1c53e19791e46ad458000c5b9608a0b3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -108,11 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Pizza
-    box/Pizza box crumple.fbx
-  uploadId: 752217

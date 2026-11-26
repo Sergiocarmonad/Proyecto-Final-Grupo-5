@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d28c316898f42d740b58378f8b462679
+guid: 797404561878c5443a37cdc620211e9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Recycle cardboard/Closed/Type
-    2/Recycle cardboard closed_Dirt_Albedo.png
-  uploadId: 752217

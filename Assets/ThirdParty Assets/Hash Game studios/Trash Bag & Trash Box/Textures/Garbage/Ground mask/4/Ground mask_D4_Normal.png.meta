@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77ad2451cc6843343bb00936284bf2ad
+guid: cfdc45031cbb73e45932a532fe9a97cc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Ground
-    mask/4/Ground mask_D4_Normal.png
-  uploadId: 752217

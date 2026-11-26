@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0244536d0ee24a94da9ce7f9a2ece5b5
+guid: 4bad8e95c225c87498185d373788a020
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Recycle cardboard/Open/Recycle
-    cardboard open_AmbientOcclusion.png
-  uploadId: 752217

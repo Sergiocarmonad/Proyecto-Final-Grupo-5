@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a61814850c370a41a93c10652ab3197
+guid: 839727e30102b9949bab953300861bcf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Canned
-    food 2/1/Canned food 2_D_Emissive.png
-  uploadId: 752217

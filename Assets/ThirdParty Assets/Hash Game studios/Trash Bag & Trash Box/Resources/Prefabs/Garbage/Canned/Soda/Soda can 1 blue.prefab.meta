@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: de631abe16bcab34a8d52b4821943956
+guid: f48fe29e3e883f74293365dc0e790ec1
 PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Resources/Prefabs/Garbage/Canned/Soda/Soda
-    can 1 blue.prefab
-  uploadId: 752217

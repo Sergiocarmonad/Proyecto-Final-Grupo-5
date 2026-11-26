@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c608c20a7631c08418b08d2f00bccc62
+guid: 39bd3b82a792610499a367ce6bb0a0c8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -108,11 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Canned/Paint
-    can/Paint can crumple.fbx
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 799a404813c6f4443b3d3f971297d845
+guid: 82acebe0d95c368408144fb971de2ac4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Brick
-    2/Brick 2_D_AmbientOcclusion.png
-  uploadId: 752217

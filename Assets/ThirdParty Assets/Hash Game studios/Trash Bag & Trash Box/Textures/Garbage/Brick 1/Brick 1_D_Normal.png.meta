@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34bfc970b50b8f94ebb29baa38a0c351
+guid: 840a98dd09de67c46821e4024fa29db5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Brick
-    1/Brick 1_D_Normal.png
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59be729394c3863449c22d738f02874b
+guid: c6e33ee28b85bdc4a919fc3bc9ac8fdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Pizza
-    box/01/Pizza box_D_Normal.png
-  uploadId: 752217

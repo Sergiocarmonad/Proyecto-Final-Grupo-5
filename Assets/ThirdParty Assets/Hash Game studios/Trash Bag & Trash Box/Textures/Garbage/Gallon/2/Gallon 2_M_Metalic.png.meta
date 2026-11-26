@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59addc0e9c541a2439ff45cc67274b0e
+guid: d7831c4e87996824ea2e871612b24790
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Gallon/2/Gallon
-    2_M_Metalic.png
-  uploadId: 752217

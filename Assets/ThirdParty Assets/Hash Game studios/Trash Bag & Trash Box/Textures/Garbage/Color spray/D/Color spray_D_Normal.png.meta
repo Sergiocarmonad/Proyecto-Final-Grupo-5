@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6bf5bda3cf180794dabf40f2f0939a8b
+guid: cfdc2676aa9a94d498d380aac69cb0a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Color
-    spray/D/Color spray_D_Normal.png
-  uploadId: 752217

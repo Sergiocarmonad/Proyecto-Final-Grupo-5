@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1d375f3c96b87c42956222e5e2c283c
+guid: 5bb289255a3c05a4eb2d269e2005f1cb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Board/Wood
-    board 2/Pinted/Wood board 2_P_AmbientOcclusion.png
-  uploadId: 752217

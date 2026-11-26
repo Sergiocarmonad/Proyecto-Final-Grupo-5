@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a92f21156f6b63a4b94e12d7038c79e2
+guid: 0a5a3370fda8656469e030560527e09c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Color
-    spray/Pianted/Color spray_P_Height.png
-  uploadId: 752217

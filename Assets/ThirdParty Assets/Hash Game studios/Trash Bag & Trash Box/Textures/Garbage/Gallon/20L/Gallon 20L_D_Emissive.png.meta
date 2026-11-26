@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb823e0e2fc0d634d805ab8e4b50f824
+guid: 77a6cc3098e68bc47bb8df5dbbb66209
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Gallon/20L/Gallon
-    20L_D_Emissive.png
-  uploadId: 752217

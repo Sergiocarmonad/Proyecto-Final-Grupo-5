@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53c21a5dd99cc0f4781c62ff9c5f7b4f
+guid: 907a82c654ec60e4db13838eac149ef9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Bottle/Bottle
-    1/d/Bottle 1_D_Albedo.png
-  uploadId: 752217

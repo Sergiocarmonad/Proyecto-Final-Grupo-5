@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b676dd5f58a413b4ab27a3ffe9f66b20
+guid: d5ac4ad41432eab4ba6bf36e579ad331
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Canned
-    food 1/2/Canned food_R_Albedo.png
-  uploadId: 752217

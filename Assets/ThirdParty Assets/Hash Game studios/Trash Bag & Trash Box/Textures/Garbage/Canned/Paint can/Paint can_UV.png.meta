@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f81628445d30ef4b9092b0df18159f4
+guid: 4e518007bb666aa4b8e796a3687dda09
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Paint
-    can/Paint can_UV.png
-  uploadId: 752217

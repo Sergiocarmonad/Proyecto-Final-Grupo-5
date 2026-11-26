@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30cf577b5d25ab241b4268a61a9f4dea
+guid: 4a1f3f56c6683604e9aec63e29cf6856
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Gallon/20L/Gallon
-    20L_D_AmbientOcclusion.png
-  uploadId: 752217

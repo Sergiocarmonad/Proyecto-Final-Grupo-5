@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 298650135d275ab4199960b0550267e5
+guid: 99f89072f35c6724b883fcfcd0bb3399
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Canned
-    food 1/Canned food_UV.png
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 873900b5d157225488d0a62ae7353568
+guid: 201add887a03c41459a8128da02ac5ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Pizza
-    box/02/Pizza box_Dirt_Albedo.png
-  uploadId: 752217

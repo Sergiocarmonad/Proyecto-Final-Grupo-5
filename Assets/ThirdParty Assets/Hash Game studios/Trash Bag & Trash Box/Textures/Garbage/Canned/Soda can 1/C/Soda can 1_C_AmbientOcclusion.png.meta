@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a3ae8dbdd3b73944aa83d342b4ce43c
+guid: 6cf33014e4c9b0a478fa16c28bf7a255
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Canned/Soda
-    can 1/C/Soda can 1_C_AmbientOcclusion.png
-  uploadId: 752217

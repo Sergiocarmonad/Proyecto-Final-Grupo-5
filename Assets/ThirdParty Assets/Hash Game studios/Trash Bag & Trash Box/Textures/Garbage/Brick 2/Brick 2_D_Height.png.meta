@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6da493af8d58f7345927da612531984a
+guid: 1c4198070d7d91246a74277a83b3b91a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Brick
-    2/Brick 2_D_Height.png
-  uploadId: 752217

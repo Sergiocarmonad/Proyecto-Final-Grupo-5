@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 853a92006f6d0e64195485107f00d9d4
+guid: 79ac3d1626eccf34ba903f0193c3889a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Ground
-    mask/2/Ground mask_D2_Albedo.png
-  uploadId: 752217

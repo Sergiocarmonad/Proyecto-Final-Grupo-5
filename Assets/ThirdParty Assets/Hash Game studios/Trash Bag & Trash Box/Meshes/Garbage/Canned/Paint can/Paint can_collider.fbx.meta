@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 841f5576884c0f04594adaf630346ec2
+guid: 8cfcfd5ab3bdee74f9756788581612a2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -105,11 +105,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Canned/Paint
-    can/Paint can_collider.fbx
-  uploadId: 752217

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf17c752e6c65e64c81aa8c9e64c54ad
+guid: 63fb3eff1ea141f4b847bc6204171e50
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -109,11 +109,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Garbage/Bottle/Bottle
-    2.fbx
-  uploadId: 752217

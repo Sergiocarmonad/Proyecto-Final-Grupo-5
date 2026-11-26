@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f65cf84ceb0756343b52f583041adc7e
+guid: e95d607308ce4a84191fd45d8344ab7f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Bottle/Bottle
-    2/d/Bottle 2_Cap_D_Height.png
-  uploadId: 752217

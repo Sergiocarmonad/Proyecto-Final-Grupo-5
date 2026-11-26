@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3b52894770aec649b0f897841c5f5df
+guid: 1a1716d0696dbeb4dbbc3e8ba3dda649
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,11 +128,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Textures/Garbage/Ground
-    mask/1/Ground mask_D_Emissive.png
-  uploadId: 752217

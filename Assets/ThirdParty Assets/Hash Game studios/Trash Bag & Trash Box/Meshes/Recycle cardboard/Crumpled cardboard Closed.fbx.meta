@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a627bc86dbf2c2a4ba8cbc2396d99798
+guid: a9c8d8f999d32104cadbe586756cc06e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -105,11 +105,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 316725
-  packageName: Trash bag & Trash box
-  packageVersion: 1.3.0
-  assetPath: Assets/Hash Game studios/Trash Bag & Trash Box/Meshes/Recycle cardboard/Crumpled
-    cardboard Closed.fbx
-  uploadId: 752217
