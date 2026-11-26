@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Ambient_Ocean
   id: 1403823536
   guid: AA350B0D-73D3-44D0-AE08-7DAE16031193
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

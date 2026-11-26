@@ -5,7 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{3129DA5E-B8DE-4455-9A5E-3F5A3D602E05}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Fish_Impact" ID="{B5125502-78FF-44B6-9E4E-70144F87120B}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambient_Ocean" ID="{AA350B0D-73D3-44D0-AE08-7DAE16031193}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Empty_Ammo" ID="{79509D2A-E6C0-4719-A76C-6DF5035B15E5}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fish_Movement" ID="{39C8836A-0B12-4787-BECB-05AADC3AF213}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Harpoon_Shot" ID="{CCC52542-0F1A-483A-98A2-3CC29F32C232}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TestSound" ID="{7DBCB15F-28E0-4899-86BB-A501361F7D8E}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

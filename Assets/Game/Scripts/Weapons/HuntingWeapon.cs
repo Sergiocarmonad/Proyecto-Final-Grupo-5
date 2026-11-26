@@ -33,7 +33,7 @@ namespace Game.Weapons
                 HuntShotMissed?.Invoke(aimRay);
                 return;
             }
-
+            AkUnitySoundEngine.PostEvent("Fish_Impact", hit.collider.gameObject);
             HuntShotHit?.Invoke(hit.point, hit.collider.gameObject);
         }
 

@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_TestSound
   id: 2752533807
   guid: 7DBCB15F-28E0-4899-86BB-A501361F7D8E
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

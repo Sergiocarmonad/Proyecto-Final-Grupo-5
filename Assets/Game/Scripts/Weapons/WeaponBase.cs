@@ -90,6 +90,7 @@ namespace Game.Weapons
 
             if (UsesAmmo && _currentAmmo <= 0)
             {
+                AkUnitySoundEngine.PostEvent("Empty_Ammo", gameObject);
                 EmptyTriggered?.Invoke();
                 return false;
             }

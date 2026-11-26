@@ -14,6 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENT_OCEAN = 1403823536U;
+        static const AkUniqueID EMPTY_AMMO = 2777467481U;
+        static const AkUniqueID FISH_IMPACT = 3262784140U;
+        static const AkUniqueID FISH_MOVEMENT = 3739684725U;
         static const AkUniqueID HARPOON_SHOT = 905599825U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
     } // namespace EVENTS
@@ -29,6 +32,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID MUSIC_AUDIO_BUS = 493417818U;
+        static const AkUniqueID SFX_AUDIO_BUS = 4084199202U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
