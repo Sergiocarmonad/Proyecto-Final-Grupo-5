@@ -66,6 +66,7 @@ namespace Game.Reef
         public event Action<int> CollectedCountChanged;
 
         public int CollectedCount { get; private set; }
+        public int SpawnedCount { get; private set; }
         public int ActiveCount => _activeItems.Count;
         public bool IsSpawning => _isSpawning;
         public bool IsPaused => _isPaused;
@@ -133,6 +134,7 @@ namespace Game.Reef
             _normalizedProgress = 0f;
             _spawnTimer = Mathf.Max(0f, initialDelay);
             _isSpawning = _options.Count > 0;
+            SpawnedCount = 0;
 
             SetCollectedCount(0);
         }
@@ -181,6 +183,7 @@ namespace Game.Reef
             SubscribeItem(instance);
             _activeItems.Add(instance);
             instance.gameObject.SetActive(true);
+            SpawnedCount++;
 
             TrashSpawned?.Invoke(instance);
         }

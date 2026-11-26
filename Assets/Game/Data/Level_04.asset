@@ -43,3 +43,5 @@ MonoBehaviour:
   _inkSpawnInterval: 2.5
   _inkBallSpeed: 4
   _octopusLaughDelay: 1.5
+  _bonusPointsPerHealth: 10
+  _bonusPointsPerTrash: 50

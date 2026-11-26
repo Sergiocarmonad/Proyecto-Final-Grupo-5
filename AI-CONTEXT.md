@@ -52,6 +52,8 @@ Cuatro niveles, cada uno suma una mecánica. Cada nivel se define en un `LevelCo
 - Nivel 4: también se gana sobreviviendo hasta que termine el tiempo. El pulpo no es una condición de victoria, sino un obstáculo extra; si la salud llega a cero antes, se pierde.
 - Fuente de suciedad: en los niveles 2 y 3, vertidos de petróleo al mar. Es un evento configurado en el `LevelConfig` (tiempo entre vertidos, zonas posibles, intensidad) que cae sobre una zona de coral al azar y emite `OilSpillStarted(zone)`. En el nivel 4 la fuente es la tinta del pulpo. Ambas llevan al mismo evento `CoralDirtyingStarted`, así que la limpieza, el aviso y el radar no cambian según la fuente.
 
+- **Secuencia de Victoria (Pantalla de nivel superado):** Al ganar un nivel (`LevelWon`), el juego entra en un estado de pausa o transición. Se emite un evento `VictorySequenceStarted`. La lógica debe detener los spawners y el temporizador. Para la presentación (el submarino steampunk saltando), el script solo expone el evento y una función pública `ProceedToNextLevel()` o `ReturnToMenu()` que el usuario conectará a un botón de la UI o al final de una Timeline de Unity. La animación, el salto y los efectos visuales son responsabilidad del usuario en Unity (Timeline/Animator).
+
 ## Eventos para VFX
 
 Cualquier mecánica nueva debe exponer sus eventos de gameplay (acción iniciada, progreso, resultado, fallo) para que el usuario cuelgue efectos sin tocar la lógica. Al planificar, lista los eventos que añade el cambio.
