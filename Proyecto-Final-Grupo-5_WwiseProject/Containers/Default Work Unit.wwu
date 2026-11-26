@@ -25,28 +25,6 @@
 						<ActiveSource Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{19F0208C-51E6-46D5-A201-74289167AAAD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Bubble Sequences" ID="{97A6C09A-EF59-493F-9403-AFB73312D61E}" ShortID="86235115">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Bubble Sequences" ID="{2B41823B-39C9-44FF-B976-CB09C4AC3AE0}">
-							<Language>SFX</Language>
-							<AudioFile>Bubble Sequences.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="593889673"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Bubble Sequences" ID="{2B41823B-39C9-44FF-B976-CB09C4AC3AE0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Bubbles ASMR loop" ID="{B9FAFA5B-7CED-48F8-A60B-CF7F1A380144}" ShortID="938974060">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -237,6 +215,259 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Submerge Sound" ID="{92BC2F9A-1479-42AF-BDE3-8C26F2339B7F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Fish Movement Container" ID="{637D6F5A-E993-4E51-B3F7-B07530CA09F6}" ShortID="640823639">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Fish Movement_01" ID="{A622E203-949A-43CE-A6D8-E5F63852FF9B}" ShortID="631070807">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fish Movement" ID="{2D69863D-D3A7-4A58-BAB2-AE3C7C7083B4}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.03492"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.03723"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="42.1071"/>
+										<Property Name="TrimEnd" Type="Real64" Value="42.83802"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fish Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="167211544"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fish Movement" ID="{2D69863D-D3A7-4A58-BAB2-AE3C7C7083B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fish Movement_02" ID="{BE4E6B41-0F2C-425C-989E-CB69F724B408}" ShortID="380287341">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fish Movement" ID="{401173D6-1604-40CD-9C3E-A9C8B08BC5CB}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.04423"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.08163"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.03123"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.00648"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fish Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="689545168"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fish Movement" ID="{401173D6-1604-40CD-9C3E-A9C8B08BC5CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fish Movement_03" ID="{5758148A-E821-4895-8C5A-61AE1F8040F0}" ShortID="1022433551">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fish Movement" ID="{C427FB62-0D8E-4D7F-A739-6988F1EB8CBA}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.04944"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.09888"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.17716"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.05222"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fish Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="264102590"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fish Movement" ID="{C427FB62-0D8E-4D7F-A739-6988F1EB8CBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Movement Mid 1" ID="{458C6E79-BF96-4EFD-BF70-5E3C8232DF7B}" ShortID="484447777">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Mid 1" ID="{3875DF12-1E58-47BC-ACF4-B3B4EB9827AA}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Mid 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="242171187"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Mid 1" ID="{3875DF12-1E58-47BC-ACF4-B3B4EB9827AA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Movement Mid 2" ID="{310B6A1E-8339-422F-AAAD-4F2D0D347874}" ShortID="152904057">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Mid 2" ID="{93AC8B3F-B7A2-4B8A-8A5D-1453CF7928BD}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Mid 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="180442285"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Mid 2" ID="{93AC8B3F-B7A2-4B8A-8A5D-1453CF7928BD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Movement Short 1" ID="{309E2A01-6164-4728-8956-30B5A7900AAB}" ShortID="279100413">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Short 1" ID="{ADC3B9B7-2D7B-4900-B0B5-3A4CDE087A58}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Short 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="369159130"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Short 1" ID="{ADC3B9B7-2D7B-4900-B0B5-3A4CDE087A58}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Movement Short 2" ID="{0AF97F37-8704-45F4-969D-E5E9876463F9}" ShortID="574214862">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Short 2" ID="{A9273C01-31FA-4C31-A4DD-1073A85630A5}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Short 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="847241619"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Short 2" ID="{A9273C01-31FA-4C31-A4DD-1073A85630A5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Camera Movement" ID="{31912058-F836-4286-89D6-9C890B3FCF17}" ShortID="607584100">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Camera Movement" ID="{C223CA56-7272-4A99-AECB-DF19CEC9F687}">
+							<Language>SFX</Language>
+							<AudioFile>Camera Movement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="304355493"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Camera Movement" ID="{C223CA56-7272-4A99-AECB-DF19CEC9F687}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Movement Long 1" ID="{D4E80449-0667-467C-A409-4463C1DC402E}" ShortID="31752739">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Long 1" ID="{437CC0AE-0A87-4A15-84AC-AF821B188DF4}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Long 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="212274011"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Long 1" ID="{437CC0AE-0A87-4A15-84AC-AF821B188DF4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Movement Long 2" ID="{C7CCB408-5AD1-40E1-87B9-EE3B33BB80EF}" ShortID="443612716">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Movement Long 2" ID="{9757857F-5A3A-4602-BC14-3765E89A6BC5}">
+							<Language>SFX</Language>
+							<AudioFile>Movement Long 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="709647341"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Movement Long 2" ID="{9757857F-5A3A-4602-BC14-3765E89A6BC5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

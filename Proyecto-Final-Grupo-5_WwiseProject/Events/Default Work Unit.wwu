@@ -47,12 +47,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Bubble_Generator" ID="{C523B811-6ADE-4BE9-A1A0-9DCBEEEEE213}">
+				<Event Name="Fish_Impact" ID="{B5125502-78FF-44B6-9E4E-70144F87120B}">
 					<ChildrenList>
-						<Action Name="" ID="{332226E5-74C4-45C6-97B7-3E3ED01EF3A6}" ShortID="306380106">
+						<Action Name="" ID="{C654DAF6-CFE4-4FF6-8D11-933C92934FE0}" ShortID="212440489">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bubbles ASMR loop" ID="{B9FAFA5B-7CED-48F8-A60B-CF7F1A380144}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+									<ObjectRef Name="Harpoon Impact" ID="{AB95BB5D-3E08-4271-B59E-FC9F6AC42A19}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
