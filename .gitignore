@@ -112,3 +112,8 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+# Assets de terceros (no redistribuir, cada quien los importa)
+/[Aa]ssets/External Assets/
+/[Aa]ssets/External Assets.meta
+/[Aa]ssets/Mess Maker Free/
+/[Aa]ssets/Mess Maker Free.meta
