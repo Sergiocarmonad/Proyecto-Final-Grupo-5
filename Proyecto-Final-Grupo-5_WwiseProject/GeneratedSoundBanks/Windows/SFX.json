@@ -10,12 +10,38 @@
     "Type": "User",
     "GUID": "{3129DA5E-B8DE-4455-9A5E-3F5A3D602E05}",
     "Language": "SFX",
-    "Hash": "{530A7FC7-790B-C7B9-E082-A58AAA365F4F}",
+    "Hash": "{2E8F5739-3010-BBC8-163C-D47EFB58F9F1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
     "ShortName": "SFX",
-    "Path": "SFX.bnk"
+    "Path": "SFX.bnk",
+    "Media": [
+     {
+      "Id": "231206556",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Harpoon Shot.wav",
+      "CachePath": "2D/{2DA0D5B5-2C2C-137E-0143-C607AAB8F3AD}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "905599825",
+      "Name": "Harpoon_Shot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Harpoon_Shot",
+      "GUID": "{CCC52542-0F1A-483A-98A2-3CC29F32C232}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74106574",
+      "DurationMax": "0.74106574",
+      "MediaRefs": [
+       {
+        "Id": "231206556"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{75D32061-1AC2-7137-EBDD-CD5C4FCD79EC}"
+  "FileHash": "{12E419C8-1EB8-6532-5489-7DE75B42F677}"
  }
 }

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	905599825	Harpoon_Shot			\Default Work Unit\Harpoon_Shot	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	231206556	Harpoon Shot	.cache\2D\{2DA0D5B5-2C2C-137E-0143-C607AAB8F3AD}.wem		\Containers\Default Work Unit\Harpoon Shot		130868
+

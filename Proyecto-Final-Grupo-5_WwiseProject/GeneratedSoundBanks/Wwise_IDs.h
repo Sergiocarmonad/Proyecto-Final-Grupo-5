@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENT_OCEAN = 1403823536U;
+        static const AkUniqueID HARPOON_SHOT = 905599825U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
     } // namespace EVENTS
 

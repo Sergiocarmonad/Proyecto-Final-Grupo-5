@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{49E32FFF-4BF5-448D-AEF8-D42457BDE4B6}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{3129DA5E-B8DE-4455-9A5E-3F5A3D602E05}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Harpoon_Shot" ID="{CCC52542-0F1A-483A-98A2-3CC29F32C232}" WorkUnitID="{F54B9188-A3D3-4048-A880-6466812155D8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

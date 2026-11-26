@@ -20,6 +20,7 @@ namespace Game.Weapons
 
         protected override void ExecuteUse(Ray aimRay)
         {
+            AkUnitySoundEngine.PostEvent("Harpoon_Shot", gameObject);
             if (!TryCastForTarget(aimRay, out RaycastHit hit))
             {
                 HuntShotMissed?.Invoke(aimRay);

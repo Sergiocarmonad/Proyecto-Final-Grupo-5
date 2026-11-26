@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Ambient_Ocean" ID="{AA350B0D-73D3-44D0-AE08-7DAE16031193}">
+					<ChildrenList>
+						<Action Name="" ID="{24D334F9-6A41-4345-9727-76FA2F8E05FC}" ShortID="961137306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ocean Ambience Loop" ID="{48B7132F-235E-4EB4-948C-93A2C6547511}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Harpoon_Shot" ID="{CCC52542-0F1A-483A-98A2-3CC29F32C232}">
+					<ChildrenList>
+						<Action Name="" ID="{CF2C9851-DE02-4A1F-9D9C-03983AD4103B}" ShortID="1120765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harpoon Shot" ID="{57981DAA-3DEB-4E93-9036-D59185E9FC32}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

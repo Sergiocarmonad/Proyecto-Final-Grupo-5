@@ -25,6 +25,163 @@
 						<ActiveSource Name="WAT_ICE_BOTTLE_TEXTURAL_POPS 00" ID="{19F0208C-51E6-46D5-A201-74289167AAAD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Bubble Sequences" ID="{97A6C09A-EF59-493F-9403-AFB73312D61E}" ShortID="86235115">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bubble Sequences" ID="{2B41823B-39C9-44FF-B976-CB09C4AC3AE0}">
+							<Language>SFX</Language>
+							<AudioFile>Bubble Sequences.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="593889673"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Bubble Sequences" ID="{2B41823B-39C9-44FF-B976-CB09C4AC3AE0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Bubbles ASMR loop" ID="{B9FAFA5B-7CED-48F8-A60B-CF7F1A380144}" ShortID="938974060">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bubbles ASMR loop" ID="{9634FA4E-7893-4870-A3A0-FEE192F1711A}">
+							<Language>SFX</Language>
+							<AudioFile>Bubbles ASMR loop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="174716745"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Bubbles ASMR loop" ID="{9634FA4E-7893-4870-A3A0-FEE192F1711A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Harpoon Impact" ID="{AB95BB5D-3E08-4271-B59E-FC9F6AC42A19}" ShortID="685280138">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Harpoon Impact" ID="{9AA72124-4C40-443E-8CD9-5BB2BA77F49E}">
+							<Language>SFX</Language>
+							<AudioFile>Harpoon Impact.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="103291130"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Harpoon Impact" ID="{9AA72124-4C40-443E-8CD9-5BB2BA77F49E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Harpoon Shot" ID="{57981DAA-3DEB-4E93-9036-D59185E9FC32}" ShortID="1021677058">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Harpoon Shot" ID="{F635D08B-53BF-491E-85A9-15736A722600}">
+							<Language>SFX</Language>
+							<AudioFile>Harpoon Shot.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="231206556"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Harpoon Shot" ID="{F635D08B-53BF-491E-85A9-15736A722600}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="No Ammo" ID="{33978D5F-08C7-471E-97EC-C4A78DC0DE07}" ShortID="320499654">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="No Ammo" ID="{9F2695A0-D92F-473D-93DB-0A228B6DCFA6}">
+							<Language>SFX</Language>
+							<AudioFile>No Ammo.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="472012393"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="No Ammo" ID="{9F2695A0-D92F-473D-93DB-0A228B6DCFA6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ocean Ambience Loop" ID="{48B7132F-235E-4EB4-948C-93A2C6547511}" ShortID="76758867">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ocean Ambience Loop" ID="{0885E6E3-C987-494D-994B-B4C93C623CCD}">
+							<Language>SFX</Language>
+							<AudioFile>Ocean Ambience Loop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="460355871"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Ocean Ambience Loop" ID="{0885E6E3-C987-494D-994B-B4C93C623CCD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Submerge Sound" ID="{22DA6AD6-506C-4B56-AACD-2D540A43A639}" ShortID="313849139">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD3EB1A5-79F1-4964-9CAD-B6CB7A08C1B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D3406D2D-5282-4F9F-90A0-D3008B7F5B2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Submerge Sound" ID="{92BC2F9A-1479-42AF-BDE3-8C26F2339B7F}">
+							<Language>SFX</Language>
+							<AudioFile>Submerge Sound.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="900325834"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Submerge Sound" ID="{92BC2F9A-1479-42AF-BDE3-8C26F2339B7F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
