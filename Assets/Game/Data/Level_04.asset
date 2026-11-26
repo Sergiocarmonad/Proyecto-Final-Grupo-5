@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662c48ea2c5f89840aa54fc97bfb1a8e, type: 3}
+  m_Name: Level_04
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.LevelConfig
+  _durationSeconds: 60
+  _maxHealth: 100
+  _trashEnabled: 1
+  _cleaningEnabled: 1
+  _oilSpillsEnabled: 1
+  _fishEnabled: 1
+  _octopusEnabled: 1
+  _trashTypes:
+  - _trashType: {fileID: 11400000, guid: 379757d1f7cebdb4b8ff12213bed77db, type: 2}
+    _weight: 1
+  _initialTrashDelay: 2
+  _trashSpawnIntervalStart: 6
+  _trashSpawnIntervalEnd: 3
+  _maxActiveTrash: 5
+  _initialOilSpillDelay: 3
+  _oilSpillIntervalStart: 8
+  _oilSpillIntervalEnd: 5
+  _oilSpillIntensity: 1
+  _fishTypes:
+  - _fishConfig: {fileID: 11400000, guid: 66950df623b546943bc41e947868b207, type: 2}
+    _weight: 1
+  _initialFishDelay: 5
+  _fishSpawnIntervalStart: 12
+  _fishSpawnIntervalEnd: 8
+  _maxActiveFish: 3
+  _initialOctopusDelay: 15
+  _octopusPauseDuration: 25
+  _octopusMaxHits: 3
+  _inkSpawnInterval: 2.5
+  _inkBallSpeed: 4
+  _octopusLaughDelay: 1.5

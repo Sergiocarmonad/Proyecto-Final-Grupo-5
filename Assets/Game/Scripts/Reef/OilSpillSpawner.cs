@@ -16,6 +16,7 @@ namespace Game.Reef
         private readonly List<CoralZone> _fallbackCandidates = new List<CoralZone>();
 
         private bool _isSpawning;
+        private bool _isPaused;
         private float _spawnTimer;
         private float _intervalStart = 1f;
         private float _intervalEnd = 1f;
@@ -28,11 +29,12 @@ namespace Game.Reef
         public event Action<CoralZone> OilSpillStarted;
 
         public bool IsSpawning => _isSpawning;
+        public bool IsPaused => _isPaused;
         public IReadOnlyList<CoralZone> CoralZones => _coralZones;
 
         private void Update()
         {
-            if (!_isSpawning || _coralZones == null || _coralZones.Length == 0)
+            if (!_isSpawning || _isPaused || _coralZones == null || _coralZones.Length == 0)
             {
                 return;
             }
@@ -89,11 +91,20 @@ namespace Game.Reef
         }
 
         /// <summary>
+        /// Pauses or resumes new oil spill scheduling without resetting zones or the spawn timer.
+        /// </summary>
+        public void SetPaused(bool paused)
+        {
+            _isPaused = paused;
+        }
+
+        /// <summary>
         /// Stops scheduling oil spills and optionally resets all managed coral zones.
         /// </summary>
         public void StopSpawning(bool resetZones = false)
         {
             _isSpawning = false;
+            _isPaused = false;
             _spawnTimer = 0f;
 
             if (!resetZones || _coralZones == null)

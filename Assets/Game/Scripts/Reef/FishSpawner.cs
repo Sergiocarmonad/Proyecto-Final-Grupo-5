@@ -26,6 +26,7 @@ namespace Game.Reef
         private readonly List<HarmfulFish> _activeFish = new List<HarmfulFish>();
 
         private bool _isSpawning;
+        private bool _isPaused;
         private float _spawnTimer;
         private float _intervalStart = 6f;
         private float _intervalEnd = 3f;
@@ -44,6 +45,7 @@ namespace Game.Reef
         public event Action<HarmfulFish> FishCaught;
 
         public bool IsSpawning => _isSpawning;
+        public bool IsPaused => _isPaused;
         public int ActiveFishCount => _activeFish.Count;
 
         private void Awake()
@@ -54,7 +56,7 @@ namespace Game.Reef
 
         private void Update()
         {
-            if (!_isSpawning || _fishPrefab == null || _activeFishConfig == null)
+            if (!_isSpawning || _isPaused || _fishPrefab == null || _activeFishConfig == null)
             {
                 return;
             }
@@ -114,11 +116,20 @@ namespace Game.Reef
         }
 
         /// <summary>
+        /// Pauses or resumes new fish spawns without clearing active fish or resetting the spawn timer.
+        /// </summary>
+        public void SetPaused(bool paused)
+        {
+            _isPaused = paused;
+        }
+
+        /// <summary>
         /// Stops spawning and optionally returns all active fish to the pool.
         /// </summary>
         public void StopSpawning(bool clearActiveFish = false)
         {
             _isSpawning = false;
+            _isPaused = false;
 
             if (!clearActiveFish)
             {

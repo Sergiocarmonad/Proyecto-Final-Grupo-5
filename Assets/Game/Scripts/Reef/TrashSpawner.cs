@@ -43,6 +43,7 @@ namespace Game.Reef
         private float _normalizedProgress;
         private float _spawnTimer;
         private bool _isSpawning;
+        private bool _isPaused;
 
         /// <summary>
         /// Raised when a trash item spawns above the player.
@@ -67,10 +68,11 @@ namespace Game.Reef
         public int CollectedCount { get; private set; }
         public int ActiveCount => _activeItems.Count;
         public bool IsSpawning => _isSpawning;
+        public bool IsPaused => _isPaused;
 
         private void Update()
         {
-            if (!_isSpawning || _options.Count == 0)
+            if (!_isSpawning || _isPaused || _options.Count == 0)
             {
                 return;
             }
@@ -144,11 +146,20 @@ namespace Game.Reef
         }
 
         /// <summary>
+        /// Pauses or resumes new trash spawns without clearing active items or resetting the spawn timer.
+        /// </summary>
+        public void SetPaused(bool paused)
+        {
+            _isPaused = paused;
+        }
+
+        /// <summary>
         /// Stops spawning new trash and optionally returns active items to the pool.
         /// </summary>
         public void StopSpawning(bool clearActive)
         {
             _isSpawning = false;
+            _isPaused = false;
 
             if (clearActive)
             {

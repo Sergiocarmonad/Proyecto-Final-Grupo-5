@@ -4,11 +4,13 @@ using UnityEngine;
 namespace Game.Weapons
 {
     /// <summary>
-    /// Cleaning weapon that sprays along the aiming ray and consumes tank ammo only when cleaning a dirty coral zone.
+    /// Cleaning weapon that sprays along the aiming ray and consumes tank ammo only when cleaning a dirty coral zone or screen ink.
     /// </summary>
     public sealed class CleanWeapon : WeaponBase
     {
         [SerializeField, Min(0.001f)] private float _cleanAmountPerUse = 0.05f;
+        [SerializeField] private ScreenInkController _screenInk;
+        [SerializeField, Min(0.001f)] private float _inkCleanAmountPerUse = 0.25f;
 
         private bool _didCleanOnLastUse;
 
@@ -18,18 +20,20 @@ namespace Game.Weapons
         {
             _didCleanOnLastUse = false;
 
-            if (!Physics.Raycast(aimRay, out RaycastHit hit, Config.Range, Config.HitMask, QueryTriggerInteraction.Collide))
+            if (Physics.Raycast(aimRay, out RaycastHit hit, Config.Range, Config.HitMask, QueryTriggerInteraction.Collide))
             {
-                return;
+                CoralZone coralZone = hit.collider.GetComponentInParent<CoralZone>();
+                if (coralZone != null && !coralZone.IsClean)
+                {
+                    _didCleanOnLastUse = coralZone.ApplyCleaning(_cleanAmountPerUse);
+                    return;
+                }
             }
 
-            CoralZone coralZone = hit.collider.GetComponentInParent<CoralZone>();
-            if (coralZone == null || coralZone.IsClean)
+            if (_screenInk != null && _screenInk.HasInk)
             {
-                return;
+                _didCleanOnLastUse = _screenInk.CleanInk(_inkCleanAmountPerUse);
             }
-
-            _didCleanOnLastUse = coralZone.ApplyCleaning(_cleanAmountPerUse);
         }
     }
 }

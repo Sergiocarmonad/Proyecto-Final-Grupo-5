@@ -24,6 +24,7 @@ namespace Game.Reef
         public float CurrentHealth { get; private set; }
         public float NormalizedHealth => MaxHealth > 0f ? CurrentHealth / MaxHealth : 0f;
         public bool IsDepleted => CurrentHealth <= 0f;
+        public bool IsContinuousDamagePaused { get; private set; }
 
         private void Awake()
         {
@@ -41,7 +42,16 @@ namespace Game.Reef
             float resolvedMax = maxHealth > 0f ? maxHealth : _defaultMaxHealth;
             MaxHealth = Mathf.Max(0f, resolvedMax);
             CurrentHealth = MaxHealth;
+            IsContinuousDamagePaused = false;
             HealthChanged?.Invoke(CurrentHealth, MaxHealth);
+        }
+
+        /// <summary>
+        /// Pauses or resumes continuous damage ticks from obligations without affecting one-time penalties.
+        /// </summary>
+        public void SetContinuousDamagePaused(bool paused)
+        {
+            IsContinuousDamagePaused = paused;
         }
 
         /// <summary>

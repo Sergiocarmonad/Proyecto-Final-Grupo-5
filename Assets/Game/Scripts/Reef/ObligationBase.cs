@@ -34,10 +34,13 @@ namespace Game.Reef
         public ObligationState State { get; private set; } = ObligationState.Inactive;
         public float PendingElapsedTime { get; private set; }
         public float CurrentDamagePerSecond { get; private set; }
+        protected virtual bool RespectsGlobalDamagePause => true;
 
         protected virtual void Update()
         {
-            if (State != ObligationState.Pending || _config == null)
+            if (State != ObligationState.Pending
+                || _config == null
+                || (RespectsGlobalDamagePause && _reefHealth != null && _reefHealth.IsContinuousDamagePaused))
             {
                 CurrentDamagePerSecond = 0f;
                 return;

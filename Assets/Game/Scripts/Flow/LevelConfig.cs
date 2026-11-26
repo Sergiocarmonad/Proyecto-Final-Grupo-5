@@ -62,6 +62,14 @@ namespace Game.Flow
         [SerializeField] private float _fishSpawnIntervalEnd = 5f;
         [SerializeField] private int _maxActiveFish = 3;
 
+        [Header("Octopus Settings")]
+        [SerializeField, Min(0f)] private float _initialOctopusDelay = 20f;
+        [SerializeField, Min(0f)] private float _octopusPauseDuration = 25f;
+        [SerializeField, Min(1)] private int _octopusMaxHits = 3;
+        [SerializeField, Min(0.1f)] private float _inkSpawnInterval = 4f;
+        [SerializeField, Min(0.1f)] private float _inkBallSpeed = 8f;
+        [SerializeField, Min(0f)] private float _octopusLaughDelay = 1.5f;
+
         public float DurationSeconds => Mathf.Max(0f, _durationSeconds);
         public float MaxHealth => _maxHealth;
         public bool TrashEnabled => _trashEnabled;
@@ -83,5 +91,11 @@ namespace Game.Flow
         public float FishSpawnIntervalStart => Mathf.Max(0.1f, _fishSpawnIntervalStart);
         public float FishSpawnIntervalEnd => Mathf.Max(0.1f, _fishSpawnIntervalEnd);
         public int MaxActiveFish => Mathf.Max(0, _maxActiveFish);
+        public float InitialOctopusDelay => Mathf.Max(0f, _initialOctopusDelay);
+        public float OctopusPauseDuration => Mathf.Max(0f, _octopusPauseDuration);
+        public int OctopusMaxHits => Mathf.Max(1, _octopusMaxHits);
+        public float InkSpawnInterval => Mathf.Max(0.1f, _inkSpawnInterval);
+        public float InkBallSpeed => Mathf.Max(0.1f, _inkBallSpeed);
+        public float OctopusLaughDelay => Mathf.Max(0f, _octopusLaughDelay);
     }
 }
