@@ -10,12 +10,198 @@
     "Type": "User",
     "GUID": "{3129DA5E-B8DE-4455-9A5E-3F5A3D602E05}",
     "Language": "SFX",
-    "Hash": "{530A7FC7-790B-C7B9-E082-A58AAA365F4F}",
+    "Hash": "{9CBCA6F8-4C5E-4645-7DE0-77CB36B796AB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SFX",
     "ShortName": "SFX",
-    "Path": "SFX.bnk"
+    "Path": "SFX.bnk",
+    "Media": [
+     {
+      "Id": "103291130",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Harpoon Impact.wav",
+      "CachePath": "A6/{A6066B80-4EC4-A59F-163F-443A1F621E79}.wem"
+     },
+     {
+      "Id": "167211544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fish Movement.wav",
+      "CachePath": "63/{639535D9-EAB1-10F0-B4C5-A8CB56177BB6}.wem"
+     },
+     {
+      "Id": "231206556",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Harpoon Shot.wav",
+      "CachePath": "2D/{2DA0D5B5-2C2C-137E-0143-C607AAB8F3AD}.wem"
+     },
+     {
+      "Id": "264102590",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fish Movement.wav",
+      "CachePath": "B8/{B8F66AC2-505F-4FE8-087A-0B6139DD0DFF}.wem"
+     },
+     {
+      "Id": "270123054",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WAT_ICE_BOTTLE_TEXTURAL_POPS 00.wav",
+      "CachePath": "3F/{3F66F43D-0C5C-6ECB-0BAE-35EADA0A1B9C}.wem"
+     },
+     {
+      "Id": "460355871",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ocean Ambience Loop.wav",
+      "CachePath": "74/{744620AC-10C8-4152-8E96-EAAA3DDA4A54}.wem"
+     },
+     {
+      "Id": "472012393",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "No Ammo.wav",
+      "CachePath": "F6/{F67F5176-8D73-6327-6D90-9570199ED943}.wem"
+     },
+     {
+      "Id": "689545168",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fish Movement.wav",
+      "CachePath": "E1/{E1E813EE-350E-356B-EFBC-2EB6ED874E92}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "548131238",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Containers\\Default Work Unit\\SFX\\No Ammo\\[0 - Compressor]\\Compressor (Custom)",
+       "GUID": "{B94C6259-4BC7-4AE8-BE8D-2D3B529AE0F1}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "614197320",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\Default Work Unit\\SFX\\No Ammo\\[1 - Parametric EQ]\\Parametric EQ (Custom)",
+       "GUID": "{A01F131F-CE9B-4F3A-A770-641F95C3DCED}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1403823536",
+      "Name": "Ambient_Ocean",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient_Ocean",
+      "GUID": "{AA350B0D-73D3-44D0-AE08-7DAE16031193}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "460355871"
+       }
+      ]
+     },
+     {
+      "Id": "2777467481",
+      "Name": "Empty_Ammo",
+      "ObjectPath": "\\Events\\Default Work Unit\\Empty_Ammo",
+      "GUID": "{79509D2A-E6C0-4719-A76C-6DF5035B15E5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5377364",
+      "DurationMax": "0.561544",
+      "MediaRefs": [
+       {
+        "Id": "472012393"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "548131238"
+        },
+        {
+         "Id": "614197320"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3262784140",
+      "Name": "Fish_Impact",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fish_Impact",
+      "GUID": "{B5125502-78FF-44B6-9E4E-70144F87120B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0409505",
+      "DurationMax": "1.1249887",
+      "MediaRefs": [
+       {
+        "Id": "103291130"
+       }
+      ]
+     },
+     {
+      "Id": "3739684725",
+      "Name": "Fish_Movement",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fish_Movement",
+      "GUID": "{39C8836A-0B12-4787-BECB-05AADC3AF213}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.623568",
+      "DurationMax": "0.97525",
+      "MediaRefs": [
+       {
+        "Id": "167211544"
+       },
+       {
+        "Id": "264102590"
+       },
+       {
+        "Id": "689545168"
+       }
+      ]
+     },
+     {
+      "Id": "905599825",
+      "Name": "Harpoon_Shot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Harpoon_Shot",
+      "GUID": "{CCC52542-0F1A-483A-98A2-3CC29F32C232}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6894447",
+      "DurationMax": "0.74106574",
+      "MediaRefs": [
+       {
+        "Id": "231206556"
+       }
+      ]
+     },
+     {
+      "Id": "2752533807",
+      "Name": "Play_TestSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TestSound",
+      "GUID": "{7DBCB15F-28E0-4899-86BB-A501361F7D8E}",
+      "DurationType": "OneShot",
+      "DurationMin": "22.717731",
+      "DurationMax": "22.717731",
+      "MediaRefs": [
+       {
+        "Id": "270123054"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{75D32061-1AC2-7137-EBDD-CD5C4FCD79EC}"
+  "FileHash": "{746995BF-449A-7D3E-13E9-771200AA023B}"
  }
 }

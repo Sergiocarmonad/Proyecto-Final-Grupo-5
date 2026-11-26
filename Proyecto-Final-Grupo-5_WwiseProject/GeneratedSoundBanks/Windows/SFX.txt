@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	905599825	Harpoon_Shot			\Default Work Unit\Harpoon_Shot	
+	1403823536	Ambient_Ocean			\Default Work Unit\Ambient_Ocean	
+	2752533807	Play_TestSound			\Default Work Unit\Play_TestSound	
+	2777467481	Empty_Ammo			\Default Work Unit\Empty_Ammo	
+	3262784140	Fish_Impact			\Default Work Unit\Fish_Impact	
+	3739684725	Fish_Movement			\Default Work Unit\Fish_Movement	
+
+Effect plug-ins	ID	Name	Type				Notes
+	548131238	Compressor (Custom)	Wwise Compressor			
+	614197320	Parametric EQ (Custom)	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	103291130	Harpoon Impact	.cache\A6\{A6066B80-4EC4-A59F-163F-443A1F621E79}.wem		\Containers\Default Work Unit\SFX\Harpoon Impact		110392
+	167211544	Fish Movement_01	.cache\63\{639535D9-EAB1-10F0-B4C5-A8CB56177BB6}.wem		\Containers\Default Work Unit\SFX\Fish Movement Container\Fish Movement_01		64612
+	231206556	Harpoon Shot	.cache\2D\{2DA0D5B5-2C2C-137E-0143-C607AAB8F3AD}.wem		\Containers\Default Work Unit\SFX\Harpoon Shot		130868
+	264102590	Fish Movement_03	.cache\B8\{B8F66AC2-505F-4FE8-087A-0B6139DD0DFF}.wem		\Containers\Default Work Unit\SFX\Fish Movement Container\Fish Movement_03		77324
+	270123054	WAT_ICE_BOTTLE_TEXTURAL_POPS 00	.cache\3F\{3F66F43D-0C5C-6ECB-0BAE-35EADA0A1B9C}.wem		\Containers\Default Work Unit\WAT_ICE_BOTTLE_TEXTURAL_POPS 00		4007584
+	460355871	Ocean Ambience Loop	.cache\74\{744620AC-10C8-4152-8E96-EAAA3DDA4A54}.wem		\Containers\Default Work Unit\SFX\Ocean Ambience Loop		20563344
+	472012393	No Ammo	.cache\F6\{F67F5176-8D73-6327-6D90-9570199ED943}.wem		\Containers\Default Work Unit\SFX\No Ammo		84408
+	689545168	Fish Movement_02	.cache\E1\{E1E813EE-350E-356B-EFBC-2EB6ED874E92}.wem		\Containers\Default Work Unit\SFX\Fish Movement Container\Fish Movement_02		86162
+
