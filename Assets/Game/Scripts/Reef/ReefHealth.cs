@@ -25,6 +25,7 @@ namespace Game.Reef
         public float NormalizedHealth => MaxHealth > 0f ? CurrentHealth / MaxHealth : 0f;
         public bool IsDepleted => CurrentHealth <= 0f;
         public bool IsContinuousDamagePaused { get; private set; }
+        public bool IsDamageBlocked { get; private set; }
 
         private void Awake()
         {
@@ -43,6 +44,7 @@ namespace Game.Reef
             MaxHealth = Mathf.Max(0f, resolvedMax);
             CurrentHealth = MaxHealth;
             IsContinuousDamagePaused = false;
+            IsDamageBlocked = false;
             HealthChanged?.Invoke(CurrentHealth, MaxHealth);
         }
 
@@ -55,11 +57,19 @@ namespace Game.Reef
         }
 
         /// <summary>
+        /// Blocks or unblocks all incoming damage (continuous ticks and one-time penalties).
+        /// </summary>
+        public void SetDamageBlocked(bool blocked)
+        {
+            IsDamageBlocked = blocked;
+        }
+
+        /// <summary>
         /// Single damage entry point for all penalties and hazards.
         /// </summary>
         public void ApplyDamage(float amount)
         {
-            if (!(amount > 0f) || IsDepleted)
+            if (IsDamageBlocked || !(amount > 0f) || IsDepleted)
             {
                 return;
             }

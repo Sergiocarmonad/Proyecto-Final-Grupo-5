@@ -70,6 +70,10 @@ namespace Game.Flow
         [SerializeField, Min(0.1f)] private float _inkBallSpeed = 8f;
         [SerializeField, Min(0f)] private float _octopusLaughDelay = 1.5f;
 
+        [Header("Victory Bonus")]
+        [SerializeField, Min(0f)] private float _bonusPointsPerHealth = 10f;
+        [SerializeField, Min(0f)] private float _bonusPointsPerTrash = 50f;
+
         public float DurationSeconds => Mathf.Max(0f, _durationSeconds);
         public float MaxHealth => _maxHealth;
         public bool TrashEnabled => _trashEnabled;
@@ -97,5 +101,7 @@ namespace Game.Flow
         public float InkSpawnInterval => Mathf.Max(0.1f, _inkSpawnInterval);
         public float InkBallSpeed => Mathf.Max(0.1f, _inkBallSpeed);
         public float OctopusLaughDelay => Mathf.Max(0f, _octopusLaughDelay);
+        public float BonusPointsPerHealth => Mathf.Max(0f, _bonusPointsPerHealth);
+        public float BonusPointsPerTrash => Mathf.Max(0f, _bonusPointsPerTrash);
     }
 }

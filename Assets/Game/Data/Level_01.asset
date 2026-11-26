@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662c48ea2c5f89840aa54fc97bfb1a8e, type: 3}
   m_Name: Level_01
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.LevelConfig
-  _durationSeconds: 60
+  _durationSeconds: 20
   _maxHealth: 100
   _trashEnabled: 1
   _cleaningEnabled: 0
@@ -26,3 +26,20 @@ MonoBehaviour:
   _trashSpawnIntervalStart: 6
   _trashSpawnIntervalEnd: 3
   _maxActiveTrash: 5
+  _initialOilSpillDelay: 3
+  _oilSpillIntervalStart: 12
+  _oilSpillIntervalEnd: 6
+  _oilSpillIntensity: 0.25
+  _fishTypes: []
+  _initialFishDelay: 4
+  _fishSpawnIntervalStart: 10
+  _fishSpawnIntervalEnd: 5
+  _maxActiveFish: 3
+  _initialOctopusDelay: 20
+  _octopusPauseDuration: 25
+  _octopusMaxHits: 3
+  _inkSpawnInterval: 4
+  _inkBallSpeed: 8
+  _octopusLaughDelay: 1.5
+  _bonusPointsPerHealth: 10
+  _bonusPointsPerTrash: 50
