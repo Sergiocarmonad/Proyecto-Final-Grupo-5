@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fish_Movement" ID="{39C8836A-0B12-4787-BECB-05AADC3AF213}">
+					<ChildrenList>
+						<Action Name="" ID="{D276A2BE-CBE4-4E55-A5BB-AB0F63C1D046}" ShortID="606630862">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fish Movement Container" ID="{637D6F5A-E993-4E51-B3F7-B07530CA09F6}" WorkUnitID="{2F73FBD2-1C73-41C3-9C77-7FC79BE2B567}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
