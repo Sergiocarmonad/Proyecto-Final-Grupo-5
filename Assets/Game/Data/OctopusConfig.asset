@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OctopusConfig
   m_EditorClassIdentifier: Assembly-CSharp::Game.Reef.OctopusConfig
   _obligation: {fileID: 11400000, guid: ffe208adb999def4790535683f3c51de, type: 2}
-  _spawnPosition: {x: 0, y: 2, z: -12}
+  _spawnPosition: {x: 0, y: 2, z: -8}
   _zoneMoveAmplitude: {x: 3, y: 0.75}
   _zoneMoveSpeed: 1.2
   _warningDuration: 1.5
